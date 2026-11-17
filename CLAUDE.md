@@ -33,6 +33,10 @@ Quando arrivano nuovi export in `raw/` o l'utente comunica un'informazione nuova
 6. Aggiungi una riga a `wiki/log.md` (data, cosa è cambiato, note toccate, fonti).
 7. Una nota che sostituisce un'altra non la cancella: segna `stato: superata` e linka la nuova.
 
+## Sincronizzazione con GitHub
+- **Prima di lavorare** su un computer (o in una nuova sessione), scarica le modifiche da GitHub: `git pull --ff-only origin main`. Se il pull non è un fast-forward, fermati e segnalalo all'utente.
+- **Dopo ogni aggiornamento del cervello**, fai un commit con una nota chiara che dice cosa è cambiato (note toccate e motivo) e invialo su `main` (`git push origin main`), senza creare altri rami. Verifica poi che il commit sia su GitHub.
+
 ## Agenti nei workflow
 Nei workflow gli agenti si usano **sempre come tipi di agente registrati** (`agentType: '<nome>'`, definiti in `.claude/agents/<nome>.md`): istruzioni e strumenti stanno nella definizione, nel prompt va solo il contesto del run (data di riferimento, liste chiuse, file assegnati). Mai `general-purpose` che legge il file di specifica come testo: parte con ~71k token di contesto invece di ~14k, e il vincolo sugli strumenti sarebbe solo scritto nel prompt. Un nuovo agente va quindi creato in `.claude/agents/` e usato per tipo; vale anche per i workflow futuri.
 
