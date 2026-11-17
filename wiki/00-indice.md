@@ -6,7 +6,7 @@ Punto di ingresso del company brain. Regole, formato delle note e mappa fatto �
 
 Ogni indice elenca le note della cartella con una riga di sintesi; qui non se ne ripete il contenuto.
 
-- [[_indice-clienti]] — 8 note: 6 clienti attivi e i prospect Ferro & Forma e Studio Rossi
+- [[_indice-clienti]] — 7 note: 6 clienti attivi e il prospect Ferro & Forma
 - [[_indice-contratti]] — 6 note: contratti quadro, a progetto e retainer
 - [[_indice-offerte]] — 14 note: offerte e relativo esito commerciale
 - [[_indice-progetti]] — 9 note: progetti nati dalle offerte accettate
